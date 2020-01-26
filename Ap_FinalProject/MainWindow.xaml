@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TabControl HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="395">
+            <TabItem Header="MainTab" Height="20" VerticalAlignment="Top" >
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,-118">
+                    <TextBox Name="Text1" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" Text="Please type what you want!" VerticalAlignment="Top" Width="234" TextChanged="TextBox_TextChanged"/>
+                    <Button Content="Calculate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Height="28" Margin="284,22,0,0" RenderTransformOrigin="0.5,0.5" Click="Button_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Window>
