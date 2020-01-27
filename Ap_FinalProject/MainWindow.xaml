@@ -5,13 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ap_FinalProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <TabControl HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="395">
-            <TabItem Header="MainTab" Height="20" VerticalAlignment="Top" >
-                <Grid Background="#FFE5E5E5" Margin="0,0,0,-118">
-                    <TextBox Name="Text1" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" Text="Please type what you want!" VerticalAlignment="Top" Width="234" TextChanged="TextBox_TextChanged"/>
-                    <Button Content="Calculate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Height="28" Margin="284,22,0,0" RenderTransformOrigin="0.5,0.5" Click="Button_Click"/>
+        Title="MainWindow" Height="900.011" Width="1300.522">
+    <Grid Margin="0,0,-78,-84">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="523*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TabControl HorizontalAlignment="Left" Height="646" VerticalAlignment="Top" Width="1088" Margin="36,10,0,0" Grid.RowSpan="2" Grid.Column="1" SelectionChanged="TabControl_SelectionChanged">
+            <TabItem Header="MainTab" Height="20" VerticalAlignment="Bottom" Margin="-2,-2,-2,2" >
+                <Grid Background="#FFE5E5E5" Margin="0,6,25,2">
+                    <TextBox Name="Text1" HorizontalAlignment="Left" Height="132" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="286" TextChanged="TextBox_TextChanged" Margin="38,66,0,0" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+                    <Button Content="Calculate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" Height="64" Margin="480,43,0,0" RenderTransformOrigin="6.779,3.987" Click="Button_Click"/>
+                    <Label Content="Plaese Type What you want in the Text-Box:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.963,0.969" Margin="38,10,0,0" Width="271" Height="41"/>
+                    <Label Name="X_Value" Content="" HorizontalAlignment="Left" Height="55" Margin="111,288,0,0" VerticalAlignment="Top" Width="72"/>
+                    <Label Name="Y_Value" Content="" HorizontalAlignment="Left" Height="55" Margin="111,413,0,0" VerticalAlignment="Top" Width="72"/>
                 </Grid>
             </TabItem>
             <TabItem Header="TabItem">
